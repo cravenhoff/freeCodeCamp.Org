@@ -1,4 +1,4 @@
-## Course Outline:---
+## Course Outline:
 
 * Introduction to Basic HTML and HTML5
 * Say Hello to HTML Elements
@@ -30,4 +30,4 @@
 * Declare the Doctype of an HTML Document
 * Define the Head and Body of an HTML Document
 
-** Total concepts to complete: 28. **
+**Total concepts to complete: 28.**
