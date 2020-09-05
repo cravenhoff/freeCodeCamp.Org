@@ -11,16 +11,17 @@
 
     - **Relative: Top, Bottom, Left, Right**
     - **Absolute: Top, Bottom, Left, Right**
+    - **Fixed: Top, Bottom, Left, Right**
     
 * Relative Position: Allows CSS to position an element relative to its original position in the normal flow of the page. The above CSS Offset Properties tell the browser how many pixels, percentages or ems to move the element _away_ from where it was normally positioned.
+
+* Absolute Position: Positions elements relative to their parent container/element. In order for elements to be absolutely positioned, their parent element must firstly be relatively positioned.
 
 #### CSS Offsets:
 
 * CSS Offsets: Top, Bottom, Left, Right.
 * The CSS Offsets tell the browser _how far to offset_ an element relative to where it would sit in the normal flow of the document. 
 * Offsetting elements basically moves them away from the referenced point/spot, essentially moving them in the opposite direction. Eg: The TOP Offset moves the specified element down and the LEFT Offset moves an item to the right of where it was originally positioned.
-
-* Absolute Position: Positions elements relative to their parent container/element. In order for elements to be absolutely positioned, their parent element must firstly be relatively positioned.
 
 ### Notes:
 ***
@@ -32,3 +33,5 @@
 * Absolute Positioning: Elements absolutely positioned will be locked relative to its closest positioned _ancestor_. Eg: If you forget to format an element's parent container with the position rule, the browser will continue looking up the chain until it finds an ancestor with a relative position assigned to it and will lock it to that parent element accordingly. 
 
 * IMPORTANT!: Unlike relative positioning, absolute positioning removes elements from the normal flow of a document. Similarly, fixed positioning also has the same effect on elements it is applied to.
+
+* IMPORTANT!: Key difference between absolute and fixed positions - elements with a fixed position will not move when the user scrolls.
