@@ -30,3 +30,5 @@
 * IMPORTANT!: Regardless of the position of the elements, the underlying HTML structure must be aligned to logically flow and make sense when read from top to bottm and left to right in the document/page. This is helpful in allowing visually impaired users to easily access your content.
 
 * Absolute Positioning: Elements absolutely positioned will be locked relative to its closest positioned _ancestor_. Eg: If you forget to format an element's parent container with the position rule, the browser will continue looking up the chain until it finds an ancestor with a relative position assigned to it and will lock it to that parent element accordingly. 
+
+* IMPORTANT!: Unlike relative positioning, absolute positioning removes elements from the normal flow of a document. Similarly, fixed positioning also has the same effect on elements it is applied to.
