@@ -35,6 +35,12 @@
 
     - Left: floats an element to the left of its containing parent element.
     - Right: floats an element to the right of its containing parent element.
+    
+#### Positioning Overlapping Elements with Z-Index:
+
+* Overlapping elements can be positioned in a certain fashion/order using the z-index property.
+
+* Elements that display on top of others have a higher z-index number and value, whilst elements stacked below have a lower z-index number. z-index values are integer-based values and not decimals.
 
 ### Notes:
 ***
