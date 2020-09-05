@@ -25,6 +25,17 @@
 * The CSS Offsets tell the browser _how far to offset_ an element relative to where it would sit in the normal flow of the document. 
 * Offsetting elements basically moves them away from the referenced point/spot, essentially moving them in the opposite direction. Eg: The TOP Offset moves the specified element down and the LEFT Offset moves an item to the right of where it was originally positioned.
 
+#### Floats:
+
+* Float is another positioning tool. Similar to absolute and fixed positions, it removes an element from the natural flow of the document and pushes it to the left or right of its containing parent element.
+
+* The float position is commonly used with the **width** property to specify how much _horizontal space_ the floated element requires.
+
+* Values of the float property:
+
+    - Left: floats an element to the left of its containing parent element.
+    - Right: floats an element to the right of its containing parent element.
+
 ### Notes:
 ***
 
