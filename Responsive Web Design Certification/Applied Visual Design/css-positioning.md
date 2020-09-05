@@ -42,6 +42,12 @@
 
 * Elements that display on top of others have a higher z-index number and value, whilst elements stacked below have a lower z-index number. z-index values are integer-based values and not decimals.
 
+#### Positioning Techniques:
+
+* **Margin**: The margin property is another positioning technique that can be used to _center_ a block element _horizontally_.
+
+* Block elements are center horizontally using the _auto_ value of the margin property.
+
 ### Notes:
 ***
 
