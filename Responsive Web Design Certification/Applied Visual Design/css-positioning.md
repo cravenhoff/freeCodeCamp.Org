@@ -14,6 +14,12 @@
     
 * Relative Position: Allows CSS to position an element relative to its original position in the normal flow of the page. The above CSS Offset Properties tell the browser how many pixels, percentages or ems to move the element _away_ from where it was normally positioned.
 
+#### CSS Offsets:
+
+* CSS Offsets: Top, Bottom, Left, Right.
+* The CSS Offsets tell the browser _how far to offset_ an element relative to where it would sit in the normal flow of the document. 
+* Offsetting elements basically moves them away from the referenced point/spot, essentially moving them in the opposite direction. Eg: The TOP Offset moves the specified element down and the LEFT Offset moves an item to the right of where it was originally positioned.
+
 ### Notes:
 ***
 
