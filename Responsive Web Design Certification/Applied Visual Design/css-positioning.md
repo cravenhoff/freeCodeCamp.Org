@@ -13,3 +13,10 @@
     - Absolute: Top, Bottom, Left, Right
     
 * Relative Position: Allows CSS to position an element relative to its original position in the normal flow of the page. The above CSS Offset Properties tell the browser how many pixels, percentages or ems to move the element _away_ from where it was normally positioned.
+
+### Notes:
+***
+
+* Relative Positioning: Relative elements do not disrupt the normal flow of other page elements, it is independent of them.
+
+* IMPORTANT!: Regardless of the position of the elements, the underlying HTML structure must be aligned to logically flow and make sense when read from top to bottm and left to right in the document/page. This is helpful in allowing visually impaired users to easily access your content.
