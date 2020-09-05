@@ -17,6 +17,8 @@
 
 * Absolute Position: Positions elements relative to their parent container/element. In order for elements to be absolutely positioned, their parent element must firstly be relatively positioned.
 
+* Fixed Position: A type of absolute positioning that fixes or locks elements relative to the _browser window_.
+
 #### CSS Offsets:
 
 * CSS Offsets: Top, Bottom, Left, Right.
