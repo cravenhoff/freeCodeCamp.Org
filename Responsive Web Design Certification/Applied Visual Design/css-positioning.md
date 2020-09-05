@@ -9,8 +9,7 @@
 
 * Elements can be positioned using the following **Position Properties**:
 
-    - Relative: Top, Bottom, Left, Right
-    - Absolute: Top, Bottom, Left, Right
+    - **Relative: Top, Bottom, Left, Right**
     
 * Relative Position: Allows CSS to position an element relative to its original position in the normal flow of the page. The above CSS Offset Properties tell the browser how many pixels, percentages or ems to move the element _away_ from where it was normally positioned.
 
