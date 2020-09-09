@@ -23,3 +23,8 @@ let planet = "Earth";
 let char = planet[planet.length - 2]; // Gets the second-to-last character of the string "Earth".
                                         
 /* -- Add key concepts in Strings to understand -- */
+
+// STRING IMMUTABILITY
+// This concepts refers to the inability of strings to be "mutable" or to be modified (altered) dynamically once their declared.
+let greetings = "Jello, World";
+greetings[0] = "H"; // The string literals of the variable "greetings" cannot be changed as attempted here.
