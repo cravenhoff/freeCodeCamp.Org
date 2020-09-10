@@ -40,3 +40,19 @@ let lastFruit = fruits[fruits.length - 1];
 
 // Access the nth-to-last element of an array
 let randomFruit = fruits[fruits.length - 3]; // Retrieves and stores the third last element of the array.
+
+// Access multi-dimensional array elements/values
+let users = [
+  ["Max Griff", 29, "maxgriff@gmail.com"],
+  ["Jamie Fox", 44, "jamiefox@gmail.com"],
+  ["Sally Calister", 37, "scallister@yahoo.com"],
+  ["Mat Riley", 52, "matriley@gmail.com"]
+];
+
+// Get first user
+let firstUser = users[0]; // Retrieces and stores first user - another array with three elements.
+
+// Get the first user's name, age, and email and store each of these values in separate variables.
+let firstUserName = users[0][0];
+let firstUserAge = users[0][1];
+let firstUserEmail = users[0][2];
