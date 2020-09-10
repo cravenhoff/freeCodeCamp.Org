@@ -45,7 +45,7 @@ let randomFruit = fruits[fruits.length - 3]; // Retrieves and stores the third l
 let users = [
   ["Max Griff", 29, "maxgriff@gmail.com"],
   ["Jamie Fox", 44, "jamiefox@gmail.com"],
-  ["Sally Calister", 37, "scallister@yahoo.com"],
+  ["Sally Calister", 37, "scalister@yahoo.com"],
   ["Mat Riley", 52, "matriley@gmail.com"]
 ];
 
@@ -56,3 +56,16 @@ let firstUser = users[0]; // Retrieces and stores first user - another array wit
 let firstUserName = users[0][0];
 let firstUserAge = users[0][1];
 let firstUserEmail = users[0][2];
+
+
+/*
+
+  Modifying Array Data/Elements:
+  
+  Arrays in JavaScript are "mutable", unlike their string counterparts.
+  This means that arrays can easily be manipulated and altered after they are initialized.
+
+*/
+
+// Access the above users array and update the second last users email address
+users[2][2] = "sallycalister@gmail.com"; // The third users current email will be updated.
