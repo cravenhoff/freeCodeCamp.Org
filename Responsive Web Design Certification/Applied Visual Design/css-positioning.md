@@ -46,7 +46,7 @@
 
 * **Margin**: The margin property is another positioning technique that can be used to _center_ a block element _horizontally_.
 
-* Block elements are center horizontally using the _auto_ value of the margin property.
+* Block elements are centered horizontally using the _auto_ value of the margin property.
 
 ### Notes:
 ***
