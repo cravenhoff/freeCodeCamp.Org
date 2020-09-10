@@ -23,4 +23,20 @@ let myShoppingList = [
 
 /* 
   Accessing Array Data Using Bracket Notation:
+  
+  Elements of arrays can be access in a similar fashion to string characters/literals, using bracket notation.
+  Arrays also use zero-based indexing. Hence, the first element of an array has the index 0 and not 1. 
 */
+
+// Access one-dimensional array elements/values
+let fruits = ["Apples", "Oranges", "Pairs", "Grapes", "Bananas"];
+let firstFruit = fruits[0];
+
+// Access the nth-element of an array
+let firstFruit = fruits[2];
+
+// Access the last element of an array
+let lastFruit = fruits[fruits.length - 1];
+
+// Access the nth-to-last element of an array
+let randomFruit = fruits[fruits.length - 3]; // Retrieves and stores the third last element of the array.
