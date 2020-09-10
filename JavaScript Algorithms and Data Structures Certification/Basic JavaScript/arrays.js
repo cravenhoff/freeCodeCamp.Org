@@ -69,3 +69,29 @@ let firstUserEmail = users[0][2];
 
 // Access the above users array and update the second last users email address
 users[2][2] = "sallycalister@gmail.com"; // The third users current email will be updated.
+
+
+/*
+
+  Manipulating Arrays:
+  
+  Arrays can be manipulated using the following four (4) array methods:
+  1. push() - Adds a new element to the end of an array.
+  2. pop() - Removes the last element of an array.
+  3. shift() - Removes the first element of an array.
+  4. unshift() - Adds a new element to the beginnin of an array.
+
+*/
+
+// Add new elements to an array
+let myTodo = ["wash the dishes", "do laundry", "sweep the house", "mop the floor"];
+myTodo.push("wash the dog");
+
+// Remove the last element of an array
+let latestTodo = myTodo.pop(); // You can also store the removed value/element.
+
+// Removes the first element of an array
+let firstTodo = myTodo.shift(); // You can also store the removed value/element.
+
+// Add a new element to the beginning of an arry
+myTodo.unshift("study for weekly assessments");
