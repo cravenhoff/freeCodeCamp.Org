@@ -98,3 +98,39 @@ if (5 !== "5") {
   Eg: 10 >= 12 (Returns TRUE) and 10 >= 5 (Returns FALSE).
   
 */
+
+// Less Than Operator
+if ( 7 < 12) {
+  let answer = "7 is less than 12.";
+  console.log(answer);  
+} else {
+  let answer = "7 is greater than 12.";
+  console.log(answer);  
+}
+
+// Less Than or Equal To Operator
+if (2 <= 10) {
+  let answer = "2 is less than or equal to 10.";
+  console.log(answer);  
+} else {
+  let answer = "2 is greater than or equal to 10."
+  console.log(answer);  
+}
+
+// Greater Than Operator
+if (15 > 12) {
+  let answer = "15 is greater than 12.";
+  console.log(answer);  
+} else {
+  let answer = "15 is less than 12.";
+  console.log(answer);  
+}
+
+// Greater Than or Equal To Operator
+if (20 >= 15) {
+  let answer = "20 is greater than or equal to 15."; 
+  console.log(answer);   
+} else {
+  let answer = "20 is less than or equal to 15.";
+  console.log(answer);  
+}
