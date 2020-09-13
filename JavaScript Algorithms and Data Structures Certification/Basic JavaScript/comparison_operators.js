@@ -71,3 +71,30 @@ if (5 !== "5") {
   let a = "Yeah! We're STRICTLY EQUAL.";
   console.log(a);
 }
+
+
+/* 
+
+  Less Than, Less Than or Equal To, Greater Than, Greater Than or Equal To:
+  
+  => Less Than Operator
+  Checks if one value is less than another value.
+  The less than operator in JavaScript uses the less than sign: <
+  Eg: 2 < 10 (Returns TRUE) and 2 < 1 (Returns FALSE).
+  
+  => Less Than or Equal To Operator
+  Checks to see if one value is less than or equal to another value.
+  The less than or equal to operator uses the less than or equal to mathematical symbol: <=
+  Eg: 4 <= 5 (Returns TRUE as 4 is less than 5) and 10 <= 5 (Returns FALSE as 10 is not less than or equal to 5).
+  
+  => Greater Than Operator
+  Checks to see if a value is great than another.
+  Uses the greater than mathematical symbol: >
+  Eg: 5 > 3 (Returns TRUE) and 5 > 10 (Returns FALSE).
+  
+  => Greater Than or Equal To Operator
+  Checks if one value is greater than or equal to another.
+  Uses the greater than or equal to mathematical symbol: >=
+  Eg: 10 >= 12 (Returns TRUE) and 10 >= 5 (Returns FALSE).
+  
+*/
