@@ -35,3 +35,39 @@
   
   
 */
+
+// Equality Operator
+if (5 == 55) {
+  let a = "Yeah! We're EQUAL.";
+  console.log(a);
+} else {
+  let a = "Too bad! We're NOT EQUAL.";
+  console.log(a);
+}
+
+// Strict Equality Operator
+if (5 === "5") {
+  let a = "Yeah! We are STRICTLY EQUAL.";
+  console.log(a);
+} else {
+  let a = "Too bad! We're NOT STRICTLY EQUAL.";
+  console.log(a);
+}
+
+// Inequality Operator
+if (7 != 5) {
+  let a = "Oops! We're INEQUAL.";
+  console.log(a);
+} else {
+  let a = "Yeah! We're EQUAL.";
+  console.log(a);
+}
+
+// Strict Inequality Operator
+if (5 !== "5") {
+  let a = "Oops! We're STRICTLY NOT EQUAL.";
+  console.log(a);
+} else {
+  let a = "Yeah! We're STRICTLY EQUAL.";
+  console.log(a);
+}
