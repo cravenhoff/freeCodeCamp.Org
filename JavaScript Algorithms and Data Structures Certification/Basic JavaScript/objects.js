@@ -36,3 +36,30 @@
   The student{} object was created and "initialized" with four properties: name => James Packard, dateOfBirth => 22-09-1996, age => 28, nationality => British.
 
 */
+
+// Create Employee Object
+let employee = {
+  name: "Mark Hanson",
+  position: "General Manager",
+  division: "Commercial Operations",
+  yearAppointed: 2018,
+  nationality: "Australian",
+  dateOfBirth: "18-04-1975",
+  age: 46,
+  maritalStatus: "Married",
+  numOfChildren: 2
+}
+
+// Retrieve Object Properties - Dot Notation
+// Get Employee Name:
+let employeeName = employee.name;
+console.log(employeeName);
+
+// Get Employee Position:
+let employeePos = employee.position;
+console.log(employeePos);
+
+// Get Year Appointed Property:
+let employeeYearAppointed = employee.yearAppointed;
+console.log(employeeYearAppointed);
+
