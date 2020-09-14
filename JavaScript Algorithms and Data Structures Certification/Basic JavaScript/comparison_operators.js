@@ -134,3 +134,36 @@ if (20 >= 15) {
   let answer = "20 is less than or equal to 15.";
   console.log(answer);  
 }
+
+/* 
+
+  Logical AND and OR Operators:
+  
+  => Logical AND Operator
+  Compares two values and returns TRUE if and only if both values are true.
+  AND Operator in JS uses the double ampersand symbol: &&
+  Eg: 10 === 10 && 10 >= 5 (Returns TRUE) and 10 === "10" && 10 >= 5.
+  
+  => Logical OR Operator
+  Returns TRUE if any of its values are true, otherwise it returns false.
+  OR Operator in JS uses two pipe symbols: ||
+  Eg: 5 >= 2 || 5 === "5" (Returns TRUE because the first comparison is true, despite the second comparison returning false)
+      and 10 >= 5 || 10 === "10" (Return FALSE because BOTH values are false) and 5 >= 10 || 5 === 5 (Returns TRUE).
+  
+*/
+
+// Logical AND Operator
+let input = 5;
+if (input > 0 && input < 20) {
+  console.log("Input is between 1 and 20.");
+} else {
+  console.log("Please enter a value between 1 and 20.");
+}
+
+// Logical OR Operator
+let input = "1998"; 
+if (input > 2000 || typeof(input) === "number") {
+  console.log("Welcome to the 21st Century!");  
+} else {
+  console.log("You are not welcome in the 21st Century!");
+}
