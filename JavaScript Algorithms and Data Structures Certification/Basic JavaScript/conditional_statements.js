@@ -8,3 +8,18 @@
   These conditional statements return boolean values of either true or false, known as "conditional logic".
 
 */
+
+// IF Statement
+let name = "Santa";
+if (name === "Santa") {
+  console.log("Welcome Santa!");
+}
+
+// IF ELSE Statement
+// Statements that provide an alternative condition and course of action in a program
+let name = "Rain Deers";
+if (name === "Elves") {
+  console.log("Welcome Santa's Helpers!");
+} else {
+  console.log("Welcome Rain Deers!");
+}
