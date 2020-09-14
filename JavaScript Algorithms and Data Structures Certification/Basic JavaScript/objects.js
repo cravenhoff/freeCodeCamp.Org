@@ -15,7 +15,7 @@
   Objects are created the same way standard variables and arrays are created, using the var or let keyword.
   There are two different ways to create objects based on whether their "declared" or "initialized".
   
-  // Declaring Variables
+  // Declaring Objects
   let dog = new Object();
   
   Ones objects are declared, properties can be assigned to the dynamically using dot notation, like so:
@@ -24,5 +24,15 @@
   dog.breed = "Golden Retriever";
   
   Now dog{} object contains three properties along with their assigned values: name => Bowi, color => Golden Brown, breed => Golder Retriever.
+  
+  // Initializing Objects
+  let student = {
+    name: "James Packard",
+    dateOfBirth: "22-09-1992",
+    age: 28,
+    nationality: "British"
+  }
+  
+  The student{} object was created and "initialized" with four properties: name => James Packard, dateOfBirth => 22-09-1996, age => 28, nationality => British.
 
 */
