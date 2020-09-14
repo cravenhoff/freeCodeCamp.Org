@@ -41,3 +41,27 @@ function checkRank(rank) {
 }
 
 checkRank(3); // Outputs "Bravo".
+
+// Switch Statement with Default Value / Option
+let level = "";
+function checkLevel(val) {
+  switch(val) {
+    case 1:
+      level = "You are at Level 1.";
+      break;
+      
+    case 2:
+      level = "You are at Level 2.";
+      break;
+      
+    case 3:
+      level = "You are on the third level.";
+      break;
+      
+    default:
+      level = "Level does not exist.";
+      break;
+  }
+  
+  return level;
+}
