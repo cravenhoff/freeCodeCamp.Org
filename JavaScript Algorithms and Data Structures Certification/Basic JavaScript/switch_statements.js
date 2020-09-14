@@ -65,3 +65,39 @@ function checkLevel(val) {
   
   return level;
 }
+
+checkLevel(1); // The first switch case statement runs and function returns "You are at Level 1."
+
+// Multiple Cases with Same Values: Switch Statements
+let range = "";
+function checkRange(val) {
+  switch(val) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+      range = "Low";
+      break;
+      
+    case 5:
+    case 6:
+    case 7:
+      range = "Mid";
+      break;
+      
+    case 8:
+    case 9:
+    case 10:
+      range = "High";
+      break;
+      
+    default:
+      range = "Out of range.";
+      break;
+  }
+  
+  return range;
+}
+
+checkRange(7); // The second block of cases executes and function returns "Mid".
