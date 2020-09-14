@@ -23,3 +23,14 @@ if (name === "Elves") {
 } else {
   console.log("Welcome Rain Deers!");
 }
+
+// IF ELSE IF Statement
+// Statements with multiple conditions and course of actions
+let name = "Santa";
+if (name === "Santa") {
+  console.log("Welcome Santa!");
+} else if (name === "Elves") {
+  console.log("Welcome Santa's Helpers!");
+} else {
+  console.log("Welcome Rain Deers!");
+}
