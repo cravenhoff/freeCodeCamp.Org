@@ -151,3 +151,19 @@ if (20 >= 15) {
       and 10 >= 5 || 10 === "10" (Return FALSE because BOTH values are false) and 5 >= 10 || 5 === 5 (Returns TRUE).
   
 */
+
+// Logical AND Operator
+let input = 5;
+if (input > 0 && input < 20) {
+  console.log("Input is between 1 and 20.");
+} else {
+  console.log("Please enter a value between 1 and 20.");
+}
+
+// Logical OR Operator
+let input = "1998"; 
+if (input > 2000 || typeof(input) === "number") {
+  console.log("Welcome to the 21st Century!");  
+} else {
+  console.log("You are not welcome in the 21st Century!");
+}
