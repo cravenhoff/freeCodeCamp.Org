@@ -126,6 +126,13 @@ let mainCourse = menu["the main dish"]; // The menu object returns a value of "u
   Eg: Using the menu object, we can update the Desert Property with the following value: menu.Desert = "Cheese Cake".
   // The Desert Property of the Menu Object is now equal to the updated value "Cheese Cake".
   
+  => Add New Object Properties:
+  New properties can be added dynamically to existing objects using both dot and bracket notations.
+  The same format / syntax used in retrieving and updating properties is used as well for adding new object properties.
+  Eg: Add a "surprise" property meal to the Menu Object Example above.
+  menu["Surprise Meal"] = "Spicy Indian Chicken Side Dish".
+  // The Menu Object now has a total of 4 properties: Entree, The Main Dish, Desert, and Surprise Meal.
+  
 
 */
 
@@ -133,7 +140,6 @@ let book = {
   "title": "Deep Work",
   "author": "Cal Newport",
   "datePublished": 2016,
-  "publisher": "Piatkus",
   "totalPages": 257
 }
 
@@ -142,3 +148,9 @@ let currentPages = book["totalPages"]; // currentPages = 257.
 
 // update / correct the totalPages property to 296 pages
 let actualPages = book.totalPages = 296; // totalPages property = 296 && actualPages = 296 as well.
+
+// Add Publisher Property to the Book Object
+book["publisher"] = "Piatkus"; // Book Object now contains 5 properties, including Publisher.
+
+// You can even assign a new property addition to a variable
+let countryFirstPublished = book["firstPublished"] = "The United States of America"; // Book Object now contains 6 properties with the addition of the firstPublished Property, which the variable countryFirstPublished is equal to.
