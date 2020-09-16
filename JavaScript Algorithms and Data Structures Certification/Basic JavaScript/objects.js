@@ -50,16 +50,27 @@ let employee = {
   numOfChildren: 2
 }
 
-// Retrieve Object Properties - Dot Notation
-// Get Employee Name:
+/*
+
+   Retrieving Objects Values / Properties Using Dot and Bracket Notation:
+   
+   => Retriving Properties Using Dot Notation
+   Dot notation is one method used to retrieve object properties / values. This method is generally used when the object properties are known.
+   Dot notation is recommended in all but situations where property names contain more than one word names.
+   Object properties are retrieved through dot notation by firstly calling the object, and appending it with the name of the property to be retrieved.
+   Eg: To retrieve the "age" property in the above object example using dot notation: the object name "employee" is called, and appended with the property name ".age", as such: employee.age.
+   
+
+*/
+
+// Get Employee Name: Dot Notation
 let employeeName = employee.name;
 console.log(employeeName);
 
-// Get Employee Position:
+// Get Employee Position: Dot Notation
 let employeePos = employee.position;
 console.log(employeePos);
 
-// Get Year Appointed Property:
+// Get Year Appointed: Dot Notation
 let employeeYearAppointed = employee.yearAppointed;
 console.log(employeeYearAppointed);
-
