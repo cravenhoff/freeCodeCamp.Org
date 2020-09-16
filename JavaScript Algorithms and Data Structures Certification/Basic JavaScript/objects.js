@@ -52,14 +52,13 @@ let employee = {
 
 /*
 
-   Retrieving Objects Values / Properties Using Dot and Bracket Notation:
+   Retrieving Objects Values / Properties Using Dot Notation:
    
    => Retriving Properties Using Dot Notation
    Dot notation is one method used to retrieve object properties / values. This method is generally used when the object properties are known.
    Dot notation is recommended in all but situations where property names contain more than one word names.
    Object properties are retrieved through dot notation by firstly calling the object, and appending it with the name of the property to be retrieved.
-   Eg: To retrieve the "age" property in the above object example using dot notation: the object name "employee" is called, and appended with the property name ".age", as such: employee.age.
-   
+   Eg: To retrieve the "age" property in the above object example using dot notation: the object name "employee" is called, and appended with the property name ".age", as such: employee.age.  
 
 */
 
@@ -74,3 +73,28 @@ console.log(employeePos);
 // Get Year Appointed: Dot Notation
 let employeeYearAppointed = employee.yearAppointed;
 console.log(employeeYearAppointed);
+
+/*
+
+   Retrieving Objects Values / Properties Using Bracket Notation:
+   
+   => Retriving Properties Using Bracket Notation
+   Bracket notation is the second method used to retrieve object properties and their values.
+   This method is generally used in instances where property names contain more than one word.
+   Properties are retrieved in a similar fashion to dot notation, but instead of appending the property name after the dot, square brackets are used with the property name encompassed in quoted strings (using either single or double quotes).
+   Eg: The "division" property of the above object example is retrieve as follows: employee["division"];
+
+*/
+
+// Initialize a restaurant menu order
+let menu = {
+  "Entree": "Mushroom Soup with French Scone",
+  "The Main Dish": "Lamb and Mashed Potatoes",
+  "Desert": "Chocolate Muse"
+}
+
+// Retrieve the "main dish" property using bracket notation
+let mainDish = menu["The Main Dish"]; // Note: Trying to access the three-word property with dot notation will return a syntax error.
+
+// JavaScript treats property names as case-sensitive, so trying to retrieve a property name without the proper case will return a value of "undefined".
+let desert = menu["desert"]; // "desert" variable is now equal to "undefined".
