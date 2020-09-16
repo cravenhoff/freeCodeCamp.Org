@@ -50,16 +50,64 @@ let employee = {
   numOfChildren: 2
 }
 
-// Retrieve Object Properties - Dot Notation
-// Get Employee Name:
+/*
+
+   Retrieving Objects Values / Properties Using Dot Notation:
+   
+   => Retriving Properties Using Dot Notation
+   Dot notation is one method used to retrieve object properties / values. This method is generally used when the object properties are known.
+   Dot notation is recommended in all but situations where property names contain more than one word names.
+   Object properties are retrieved through dot notation by firstly calling the object, and appending it with the name of the property to be retrieved.
+   Eg: To retrieve the "age" property in the above object example using dot notation: the object name "employee" is called, and appended with the property name ".age", as such: employee.age.  
+
+*/
+
+// Get Employee Name: Dot Notation
 let employeeName = employee.name;
 console.log(employeeName);
 
-// Get Employee Position:
+// Get Employee Position: Dot Notation
 let employeePos = employee.position;
 console.log(employeePos);
 
-// Get Year Appointed Property:
+// Get Year Appointed: Dot Notation
 let employeeYearAppointed = employee.yearAppointed;
 console.log(employeeYearAppointed);
 
+/*
+
+   Retrieving Objects Values / Properties Using Bracket Notation:
+   
+   => Retriving Properties Using Bracket Notation
+   Bracket notation is the second method used to retrieve object properties and their values.
+   This method is generally used in instances where property names contain more than one word.
+   Properties are retrieved in a similar fashion to dot notation, but instead of appending the property name after the dot, square brackets are used with the property name encompassed in quoted strings (using either single or double quotes).
+   Eg: The "division" property of the above object example is retrieve as follows: employee["division"];
+
+*/
+
+// Initialize a restaurant menu order
+let menu = {
+  "Entree": "Mushroom Soup with French Scone",
+  "The Main Dish": "Lamb and Mashed Potatoes",
+  "Desert": "Chocolate Muse"
+}
+
+// Retrieve the "main dish" property using bracket notation
+menu["The Main Dish"]; // Note: Trying to access the three-word property with dot notation will return a syntax error.
+
+/*
+
+  Storing Property Values in Variables:
+  
+  => Properties can be retrieved from objects and stored in variables the same way we can initialize a variable or assign an array's value to a new variable.
+  Eg: let entree = menu["Entree"]; // Variable "entree" now contains the value of the "Entree Property" => "Mushroom Soup with French Scone".
+  
+  => JavaScript treats property names as case-sensitive, so trying to retrieve a property name without the proper case will return a value of "undefined". Hence, it's important to pay attention to the case of property names when working with objects.
+  Eg: let desert = menu["desert"]; // "desert" variable is now equal to "undefined".
+
+*/
+
+// Retrieve the "main dish" property and assign it to a new variable
+let mainDish = menu["The Main Dish"]; // mainDish variable now contains the value of the property "The Main Dish" => "Lamb and Mashed Potatoes".
+let mainCourse = menu["the main dish"]; // The menu object returns a value of "undefined" as property name has the incorrect case. Hence, mainCourse variable is equal to "undefined".
