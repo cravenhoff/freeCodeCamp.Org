@@ -94,7 +94,20 @@ let menu = {
 }
 
 // Retrieve the "main dish" property using bracket notation
-let mainDish = menu["The Main Dish"]; // Note: Trying to access the three-word property with dot notation will return a syntax error.
+menu["The Main Dish"]; // Note: Trying to access the three-word property with dot notation will return a syntax error.
 
-// JavaScript treats property names as case-sensitive, so trying to retrieve a property name without the proper case will return a value of "undefined".
-let desert = menu["desert"]; // "desert" variable is now equal to "undefined".
+/*
+
+  Storing Property Values in Variables:
+  
+  => Properties can be retrieved from objects and stored in variables the same way we can initialize a variable or assign an array's value to a new variable.
+  Eg: let entree = menu["Entree"]; // Variable "entree" now contains the value of the "Entree Property" => "Mushroom Soup with French Scone".
+  
+  => JavaScript treats property names as case-sensitive, so trying to retrieve a property name without the proper case will return a value of "undefined". Hence, it's important to pay attention to the case of property names when working with objects.
+  Eg: let desert = menu["desert"]; // "desert" variable is now equal to "undefined".
+
+*/
+
+// Retrieve the "main dish" property and assign it to a new variable
+let mainDish = menu["The Main Dish"]; // mainDish variable now contains the value of the property "The Main Dish" => "Lamb and Mashed Potatoes".
+let mainCourse = menu["the main dish"]; // The menu object returns a value of "undefined" as property name has the incorrect case. Hence, mainCourse variable is equal to "undefined".
