@@ -82,7 +82,10 @@ console.log(employeeYearAppointed);
    Bracket notation is the second method used to retrieve object properties and their values.
    This method is generally used in instances where property names contain more than one word.
    Properties are retrieved in a similar fashion to dot notation, but instead of appending the property name after the dot, square brackets are used with the property name encompassed in quoted strings (using either single or double quotes).
-   Eg: The "division" property of the above object example is retrieve as follows: employee["division"];
+   Eg: The "division" property of the above object example is retrieved as follows: employee["division"];
+   
+   => IMPORTANT NOTE:
+   When using bracket notation, unlike dot notation, always remember to enclose the property name, regardless of whether they are single or multi-worded, within quotes (using either single or double quotes).
 
 */
 
@@ -94,7 +97,7 @@ let menu = {
 }
 
 // Retrieve the "main dish" property using bracket notation
-menu["The Main Dish"]; // Note: Trying to access the three-word property with dot notation will return a syntax error.
+menu["The Main Dish"]; // Note: Trying to access the three-word properties with dot notation will return a syntax error.
 
 /*
 
@@ -111,3 +114,43 @@ menu["The Main Dish"]; // Note: Trying to access the three-word property with do
 // Retrieve the "main dish" property and assign it to a new variable
 let mainDish = menu["The Main Dish"]; // mainDish variable now contains the value of the property "The Main Dish" => "Lamb and Mashed Potatoes".
 let mainCourse = menu["the main dish"]; // The menu object returns a value of "undefined" as property name has the incorrect case. Hence, mainCourse variable is equal to "undefined".
+
+
+/*
+
+  MANIPULATING OBJECTS:
+  
+  => Updating Object Properties:
+  Object properties can be updated in a similar fashion to how array values are updated.
+  Simply call the property name using either dot or bracket notation in the same format/syntax property values are retrieved and using the assignment operator, assign a new value to it, exactly as how you would initialize or update a variable.
+  Eg: Using the menu object, we can update the Desert Property with the following value: menu.Desert = "Cheese Cake".
+  // The Desert Property of the Menu Object is now equal to the updated value "Cheese Cake".
+  
+  => Add New Object Properties:
+  New properties can be added dynamically to existing objects using both dot and bracket notations.
+  The same format / syntax used in retrieving and updating properties is used as well for adding new object properties.
+  Eg: Add a "surprise" property meal to the Menu Object Example above.
+  menu["Surprise Meal"] = "Spicy Indian Chicken Side Dish".
+  // The Menu Object now has a total of 4 properties: Entree, The Main Dish, Desert, and Surprise Meal.
+  
+
+*/
+
+let book = {
+  "title": "Deep Work",
+  "author": "Cal Newport",
+  "datePublished": 2016,
+  "totalPages": 257
+}
+
+// Retrieve current total pages
+let currentPages = book["totalPages"]; // currentPages = 257.
+
+// update / correct the totalPages property to 296 pages
+let actualPages = book.totalPages = 296; // totalPages property = 296 && actualPages = 296 as well.
+
+// Add Publisher Property to the Book Object
+book["publisher"] = "Piatkus"; // Book Object now contains 5 properties, including Publisher.
+
+// You can even assign a new property addition to a variable
+let countryFirstPublished = book["firstPublished"] = "The United States of America"; // Book Object now contains 6 properties with the addition of the firstPublished Property, which the variable countryFirstPublished is equal to.
