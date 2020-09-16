@@ -133,6 +133,15 @@ let mainCourse = menu["the main dish"]; // The menu object returns a value of "u
   menu["Surprise Meal"] = "Spicy Indian Chicken Side Dish".
   // The Menu Object now has a total of 4 properties: Entree, The Main Dish, Desert, and Surprise Meal.
   
+  => Delete Object Properties:
+  Object properties are deleted using the "delete" keyword. The keyword is placed before the property name, which is retrieved using either dot or bracket notation.
+  Eg: To delete the above Menu Object, do as follows: delete menu.Entree;
+  // The Entree Property no longer exists in the Menu Object.
+  
+  => IMPORTANT NOTE: Deleting Properties and Variables
+  Properties that are deleted cannot have their values assigned to and stored in variables.
+  JavaScript returns a boolean value when deleting properties. Hence, if a property is successfully deleted, the boolean value of TRUE is returned.
+  
 
 */
 
@@ -154,3 +163,6 @@ book["publisher"] = "Piatkus"; // Book Object now contains 5 properties, includi
 
 // You can even assign a new property addition to a variable
 let countryFirstPublished = book["firstPublished"] = "The United States of America"; // Book Object now contains 6 properties with the addition of the firstPublished Property, which the variable countryFirstPublished is equal to.
+
+// Delete the totalPages Property of the Book Object
+delete book.totalPages; // Book Object now contains 5 properties, with the totalPages property now deleted.
