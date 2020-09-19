@@ -166,3 +166,15 @@ let countryFirstPublished = book["firstPublished"] = "The United States of Ameri
 
 // Delete the totalPages Property of the Book Object
 delete book.totalPages; // Book Object now contains 5 properties, with the totalPages property now deleted.
+
+
+/*
+
+  UPCOMING CONCEPTS:
+  
+  1. Testing Objects for Properties
+  2. Manipulating Complex Objects
+  3. Accessing Nested Objects
+  4. Accessing Nested Arrays
+
+*/
