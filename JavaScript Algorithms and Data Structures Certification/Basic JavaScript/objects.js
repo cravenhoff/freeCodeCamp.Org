@@ -172,9 +172,24 @@ delete book.totalPages; // Book Object now contains 5 properties, with the total
 
   UPCOMING CONCEPTS:
   
-  1. Testing Objects for Properties
+  =>Testing Objects for Properties
+  Objects can be tested to check if they contain certain properties. This is done using the hasOwnProperty() method othe object construct in JavaScript.
+  Syntax: objectName.hasOwnProperty(propertyName);
+  Return value: The hasOwnProperty() method will return a boolean value of true or false.
+  
+
   2. Manipulating Complex Objects
   3. Accessing Nested Objects
   4. Accessing Nested Arrays
 
 */
+
+// Test the object if it contains certain properties
+let vegetables = {
+  Greens: "Abika",
+  Beans: "Green Beans",
+  TropicalFruit: "Pineapple"
+}
+
+vegetables.hasOwnProperty("Greens"); // Returns TRUE as vegetables{} object contains the property "Greens".
+vegetables.hasOwnProperty("Carrots"); // Returns FALSE as property does not exist in the vegetables{} object.
