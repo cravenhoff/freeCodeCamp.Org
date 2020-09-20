@@ -193,3 +193,20 @@ let vegetables = {
 
 vegetables.hasOwnProperty("Greens"); // Returns TRUE as vegetables{} object contains the property "Greens".
 vegetables.hasOwnProperty("Carrots"); // Returns FALSE as property does not exist in the vegetables{} object.
+
+// hasOwnProperty() with functions
+let checkObj = function(obj, checkProp) {
+  if(obj.hasOwnProperty(checkProp)) {
+       return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+}
+
+checkObj({Pet: "Kitten", Gender: "Female", Age: 2}, "Pet"); // Function returns "Kitten"
+checkObj({
+    Pet: "Kitten",
+    Gender: "Female",
+    Age: 2
+  },
+  "DOB"); // Function returns "Not Found" as "DOB" Property does not exist in checObj{} object.
