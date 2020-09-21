@@ -178,7 +178,9 @@ delete book.totalPages; // Book Object now contains 5 properties, with the total
   Return value: The hasOwnProperty() method will return a boolean value of true or false.
   
 
-  2. Manipulating Complex Objects
+  => Manipulating Complex Objects
+  Flexible and complex data structures can be created using objects. Contents of an object can be organized to contain arbitrary values of strings, numbers, boolean values, arrays, functions, and even objects themselves. These can be created as simple or as complex as required through proper nesting.
+  
   3. Accessing Nested Objects
   4. Accessing Nested Arrays
 
@@ -210,3 +212,33 @@ checkObj({
     Age: 2
   },
   "DOB"); // Function returns "Not Found" as "DOB" Property does not exist in checObj{} object.
+
+// Create a complex, flexible data structure using arrays and a combination of objects and arrays as its properties.
+let playlist = [
+  {
+    Artist: "Michael Jackson",
+    Genre: "Pop",
+    Album: "Thriller",
+    yearPublished: 1982,
+    songs: ["Thriller", "Beat It", "Wanna Be Startin' Something"]
+  },
+  {
+    Artist: "Celine Dion",
+    Genre: "Pop Ballad",
+    Album: "A New Day Has Come",
+    yearPublished: 2001,
+    songs: ["A New Day Has Come", "Super Love", "The Greatest Reward", "Have You Ever Been In Love"]
+  }
+];
+
+// Retrieve the first playlist record.
+let firstPlaylistRecord = playlist[0];
+
+// Retrieve the artist's name of the first playlist record.
+let artistName = firstPlaylistRecord.Artist; // Returns and saves "Michael Jackson" in the variable "artistName".
+
+// Retrieve the album.
+let album = firstPlaylistRecord["Album"]; // Returns and saves "Thriller" in the variable "album".
+
+// Retrieve the second song of the Thriller Album.
+let firstSong = firstPlaylistRecord.songs[1]; // Returns and saves "Beat It" in the "firstSong" variable.
