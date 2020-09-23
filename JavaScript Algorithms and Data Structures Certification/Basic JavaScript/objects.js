@@ -291,3 +291,16 @@ let house = {
 
 // Access entire house{} object
 console.log(house);
+
+// Access the inside property of the house{} object
+let inside = house.inside;
+console.log(inside);
+
+// Access the number 3 room or the Master Bedroom of the house{} object
+let masterBedroom = house.inside.bedrooms[3];
+console.log(masterBedroom);
+
+/* 
+  NOTE: Using dot notation to retrieve a number type property will not work, JavaScript will spit out an error.
+  Number type properties can only be access using bracket notation.
+*/
