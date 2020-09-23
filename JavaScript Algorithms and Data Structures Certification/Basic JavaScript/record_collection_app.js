@@ -21,19 +21,23 @@ var collection = {
 
 // Function that accepts the above collection{} object, record id, property name, and property value.
 function updateRecords(object, id, prop, value) {
+  
   if (prop !== "tracks" && value !== "") {
     object[id][prop] = value;
+    
   } else if (prop === "tracks" && object[id]["tracks"] === undefined) {
     let tracks = [];
     tracks.push(value);
     object[id]["tracks"] = tracks;
+    
   } else if (prop === "tracks" && value !== "") {
     object[id][prop].push(value);
+    
   } else if (value === "") {
     delete object[id][prop];
   }
 
-  return object;
+  return object; // Returns the entire collection{} object.
 }
 
 console.log(updateRecords(collection, 1245, 'tracks', 'Addicted to Love'));
