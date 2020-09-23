@@ -181,7 +181,11 @@ delete book.totalPages; // Book Object now contains 5 properties, with the total
   => Manipulating Complex Objects
   Flexible and complex data structures can be created using objects. Contents of an object can be organized to contain arbitrary values of strings, numbers, boolean values, arrays, functions, and even objects themselves. These can be created as simple or as complex as required through proper nesting.
   
-  3. Accessing Nested Objects
+  => Accessing Nested Objects
+  Objects can be used to generate complex, flexible data structures. Generally, this is achieved through logically nesting as many layers of objects as required.
+  Rule of thhumb: Objects must be a representation of real-life objects, and the data structure / layers should follow a logical sequence and flow.
+  
+  
   4. Accessing Nested Arrays
 
 */
@@ -242,3 +246,48 @@ let album = firstPlaylistRecord["Album"]; // Returns and saves "Thriller" in the
 
 // Retrieve the second song of the Thriller Album.
 let firstSong = firstPlaylistRecord.songs[1]; // Returns and saves "Beat It" in the "firstSong" variable.
+
+// Create a complex data structure by nesting layers of objects.
+let house = {
+  inside: {
+    bedrooms: {
+      1: {
+        room: "Boys Room",
+        occupants: 3,
+        yearOccupied: 2019,
+        bathroom: false,
+        lounge: false,
+        kitchen: false
+      },
+      2: {
+        room: "Girls Room",
+        occupants: 2,
+        yearOccupied: 2019,
+        bathroom: false,
+        lounge: false,
+        kitchen: false
+      },
+      3: {
+        room: "Master Bedroom",
+        occupants: 2,
+        yearOccupied: 2019,
+        bathroom: true,
+        lounge: true,
+        kitchen: true
+      }
+    },
+    sharedFeatures: ["bathroom", "kitchen", "lounge", "dining area"]
+  },
+  outside: {
+    laundryRoom: {
+      washingMachine: true,
+      dryer: true,
+      sink: true
+    },
+    bbqArea: true,
+    carPark: 2
+  }
+};
+
+// Access entire house{} object
+console.log(house);
