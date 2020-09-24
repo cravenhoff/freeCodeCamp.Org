@@ -319,7 +319,12 @@ let myGarden = [
 let gardenFruits = myGarden[1]; // Retrieves and stores the second element of the myGarden{} object.
 
 // Access the "pineapple" fruit in the garden
+let pineapple = myGarden[1].list[3]; // Retrieves and stores the 4th element of the list array, which is the fruit "pineapple".
+// You could also do the same thing using the already retrieved second element, or "fruits" objects.
+let pineappleFruit = gardenFruits.list[3]; // Retrieves and stores the fruit "pineapple".
+
 // Access the "parsely" herb in the garden
+let parselyHerb = myGarden[2].list[1]; // Retrieves and stores the herb "parsely".
 
 /* 
   NOTE: Using dot notation to retrieve a number type property will not work, JavaScript will spit out an error.
