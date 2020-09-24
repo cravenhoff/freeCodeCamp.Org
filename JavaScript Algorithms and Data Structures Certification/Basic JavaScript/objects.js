@@ -316,6 +316,8 @@ let myGarden = [
 ];
 
 // Access the list of garden fruits
+let gardenFruits = myGarden[1]; // Retrieves and stores the second element of the myGarden{} object.
+
 // Access the "pineapple" fruit in the garden
 // Access the "parsely" herb in the garden
 
