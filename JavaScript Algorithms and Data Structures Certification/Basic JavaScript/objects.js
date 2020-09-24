@@ -169,8 +169,6 @@ delete book.totalPages; // Book Object now contains 5 properties, with the total
 
 
 /*
-
-  UPCOMING CONCEPTS:
   
   =>Testing Objects for Properties
   Objects can be tested to check if they contain certain properties. This is done using the hasOwnProperty() method othe object construct in JavaScript.
@@ -186,7 +184,8 @@ delete book.totalPages; // Book Object now contains 5 properties, with the total
   Rule of thhumb: Objects must be a representation of real-life objects, and the data structure / layers should follow a logical sequence and flow.
   
   
-  4. Accessing Nested Arrays
+  => Accessing Nested Arrays
+  Nested arrays can be accesse in a similar fashion to nested objects. However, instead of using associative keys, we replace these with index values. Furthermore, array elements can only be accessed using bracket notation, and not dot notation.
 
 */
 
@@ -299,6 +298,33 @@ console.log(inside);
 // Access the number 3 room or the Master Bedroom of the house{} object
 let masterBedroom = house.inside.bedrooms[3];
 console.log(masterBedroom);
+
+// Create a complex array of objects with nested arrays.
+let myGarden = [
+  {
+    type: "vegetables",
+    list: ["eggplant", "carrots", "onions", "cabbages", "beans", "potatoes", "ginger"]
+  },
+  {
+    type: "fruits",
+    list : ["mango", "watermelon", "peanuts", "pineapple"]
+  },
+  {
+    type: "herbs",
+    list: ["rosemary", "parsely", "basil", "oregano", "mint"]
+  }
+];
+
+// Access the list of garden fruits
+let gardenFruits = myGarden[1]; // Retrieves and stores the second element of the myGarden{} object.
+
+// Access the "pineapple" fruit in the garden
+let pineapple = myGarden[1].list[3]; // Retrieves and stores the 4th element of the list array, which is the fruit "pineapple".
+// You could also do the same thing using the already retrieved second element, or "fruits" objects.
+let pineappleFruit = gardenFruits.list[3]; // Retrieves and stores the fruit "pineapple".
+
+// Access the "parsely" herb in the garden
+let parselyHerb = myGarden[2].list[1]; // Retrieves and stores the herb "parsely".
 
 /* 
   NOTE: Using dot notation to retrieve a number type property will not work, JavaScript will spit out an error.
