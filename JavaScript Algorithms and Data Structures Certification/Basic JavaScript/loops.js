@@ -29,3 +29,8 @@ while (counter <= 5) {
   console.log(counter);
   counter++;
 }
+
+// Create a for loop to print out the numbers from 100 to 1, backwards.
+for (let i = 100; i > 0; i--) {
+  console.log(i);
+}
