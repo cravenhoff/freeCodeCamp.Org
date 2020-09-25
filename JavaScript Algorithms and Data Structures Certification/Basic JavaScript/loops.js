@@ -23,6 +23,10 @@
   => Nesting For Loops
   For loops can be nested within each other. This is generally helpful and is used when dealing with multi-dimensional arrays.
   The nested for loops are used to loop through the parent array and its sub-array elements.
+  
+  => Do... While Loops
+  Do while loops are similar to while loops, however they vary in their execution and syntax.
+  Do while loops ensure that code within the curly braces is executed once before the condition is checked. Conversely, while loops do not execute code within the curly braces until after the condition is executed and returns true.
 
 */
 
@@ -69,3 +73,12 @@ for (let i = 0; i < arrLength; i++) {
     console.log(arr[i][j]);
   }
 }
+
+// Create a do... while loop to ensure the number 5 is added to an empty array before the while condition is executed
+let newArr = [];
+let idx = 5;
+
+do {
+  newArr.push(idx);
+  idx++;
+} while (idx < 5);
