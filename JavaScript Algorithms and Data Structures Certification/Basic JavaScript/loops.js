@@ -22,7 +22,7 @@
 
 */
 
-// Create a while loop to print out the numbers 1 through to 5.
+// Create a while loop to print out the numbers 1 through to 5
 let counter = 1;
 
 while (counter <= 5) {
@@ -30,17 +30,24 @@ while (counter <= 5) {
   counter++;
 }
 
-// Create a for loop to print out the numbers from 100 to 1, backwards.
+// Create a for loop to print out the numbers from 100 to 1, backwards
 for (let i = 100; i > 0; i--) {
   console.log(i);
 }
 
-// Iterate odd numbers with a For Loop.
+// Iterate odd numbers with a for loop
 for (let i = 1; i < 10; i += 2) {
    console.log(i);
 }
 
-// Iterate even numbers with a For Loop.
+// Iterate even numbers with a for loop
 for (let i = 0; i <= 10; i += 2) {
   console.log(i);
+}
+
+// Iterate through an array with a for loop
+let data = [1, 2, 3];
+
+for (let i = 0; i < data.length; i++) {
+  console.log(data[i]);
 }
