@@ -19,6 +19,10 @@
   
   3. Final Statement/Expression (Increment/Decrement):
   The final expression is executed at the end of the loop, prior to the condition running.
+  
+  => Nesting For Loops
+  For loops can be nested within each other. This is generally helpful and is used when dealing with multi-dimensional arrays.
+  The nested for loops are used to loop through the parent array and its sub-array elements.
 
 */
 
@@ -50,4 +54,18 @@ let data = [1, 2, 3];
 
 for (let i = 0; i < data.length; i++) {
   console.log(data[i]);
+}
+
+// Iterate through a nested array using a for a loop and output each sub-array element
+let arr = [
+  [3, 6],
+  [9, 12],
+  [15, 18],
+];
+let arrLength = arr.length;
+
+for (let i = 0; i < arrLength; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
+    console.log(arr[i][j]);
+  }
 }
