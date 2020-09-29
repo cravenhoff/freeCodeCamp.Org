@@ -15,6 +15,41 @@
     b. Else the function should return the string "No such property"
     
   4. If the name is NOT FOUND in the contact, the function should instead return "No such contact".
+  
+  *NOTE: You'll first have to create a list of contacts which the lookup function will reference.
 
 */
 
+// Create a contacts array, storing individual profiles as objects.
+let contacts = [
+  {
+    "firstName": "Max",
+    "lastName": "Payne",
+    "number": 73982201,
+    "interests" : [
+      "motorcycles",
+      "spaceship junk",
+      "mechanical engineering"
+    ]
+  },
+  {
+    "firstName": "Ada",
+    "lastName": "Lovelave",
+    "number": 4002321,
+    "interests" : [
+      "computers",
+      "coding and programming",
+      "algorithmic development & computation"
+    ]
+  },
+  {
+    "firstName": "Nikola",
+    "lastName": "Tesla",
+    "number": 4992110,
+    "interests" : [
+      "electrical engineering",
+      "thunder",
+      "visualization"
+    ]
+  }    
+];
