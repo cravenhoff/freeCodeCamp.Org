@@ -32,4 +32,5 @@ let reverseString = str => {
     return reverseString(newStr);
 }
 
-console.log(reverseString("freeCodeCamp"));
+console.log(reverseString("freeCodeCamp")); // Prints out the string in reverse "pmaCedoCeerf"
+console.log(reverseString("SwitchMaven")); // Prints out the string in reverse "nevaMhctiwS"
