@@ -55,14 +55,14 @@ let contacts = [
 ];
 
 // Create the "lookup" function.
-let function = lookup(name, prop) {
+function lookup(name, prop) {
   // Loop through the contacts array of objects
   for(let i = 0; i < contacts.length; i++) {
     // Check if the name exists in the contact list
-    if(name === contacts[i][firstName]) {
+    if(name === contacts[i].firstName) {
       // If name exists in contacts, check for the property passed in to see if it exists
       if(contacts[i].hasOwnProperty(prop)) {
-        return contacts[i].prop;
+        return contacts[i][prop];
       } else {
         return "No such property exists.";
       }
@@ -72,3 +72,6 @@ let function = lookup(name, prop) {
   // If the name does not exist in the contacts list
   return "No such contact exists."
 }
+
+console.log(lookup("Ada", "interests")); // Outputs the array containing "Ada's" interests.
+console.log(lookup("Nikola", "lastName")); // Outputs the "Nikola's" last name.
