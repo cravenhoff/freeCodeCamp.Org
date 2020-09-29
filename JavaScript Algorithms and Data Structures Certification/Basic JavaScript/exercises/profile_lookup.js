@@ -53,3 +53,11 @@ let contacts = [
     ]
   }    
 ];
+
+// Create the "lookup" function.
+let function = lookup(name, prop) {
+  // Loop through the contacts array of objects
+  for(let i = 0; i < contacts.length; i++) {
+    
+  }
+}
