@@ -14,3 +14,17 @@
    4. Print out the increments, starting from the minimum value and ending at the maximum value. At the end of the program, both values must be included and printed out.
   
 */
+
+// Create recursive function
+let countup = (min, max) => {
+  // Define base camp
+  if(min > max) {
+    return "End of countup";
+  } else {
+    console.log(min);
+    return countup(min + 1, max);
+  }
+}
+
+// Call the recursive function to run
+console.log(countup(0, 10)); // Prints out the numbers 0 through to 10 in increments of one.
